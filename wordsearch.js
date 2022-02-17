@@ -10,13 +10,13 @@ const wordSearch = (letters, word) => {
     verticalJoin.push(tempArray);
   }
 
-  for (l of verticalJoin) {
+  for (let l of verticalJoin) {
     if (l.includes(word)) {
       return true;
     }
   }
 
-  for (l of horizontalJoin) {
+  for (let l of horizontalJoin) {
     if (l.includes(word)) {
       return true;
     }
